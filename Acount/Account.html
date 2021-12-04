@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/Style.css">
+
+</head>
+<body>
+    <div class="container">
+        <nav class="nav flex">
+           <div >
+               <h1>Account</h1>
+           </div>
+           <a class="nav__list flex" href="../index.html">
+                <svg class="icon">
+                    <use xlink:href="Images/sprite2.svg#homeIcon"></use>
+                </svg>
+            </a>
+        </nav>
+        <div class="header grid">
+            <div class="user padding">
+                <div class="profile__card flex padding">
+                    <div class="profile__head">
+                        <div class="img flex" id="FLetter"></div>
+                    </div>
+                    <div class="desc">
+                        <h2 id="name"></h2>
+                        <ul>
+                            <li class="flex">
+                                <svg class="icon">
+                                    <use xlink:href="Images/sprite.svg#iconmonstr-mail-thin"></use>
+                                </svg>
+                                <dd id="email"></dd>
+                            </li>
+                            <li class="flex"> 
+                                <svg class="icon">
+                                    <use xlink:href="Images/sprite.svg#iconmonstr-phone-thin"></use>
+                                </svg>
+                                <dd id="phone"></dd>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="Account padding">
+                <div class="profile__card padding">
+                    <div class="title">
+                        <h5>Account Details</h5>
+                    </div>
+                    <ul> 
+                        <li class="flex list "> 
+                            <dd>User ID</dd>
+                            <dd id="ID"></dd>
+                        </li>
+                        <li class="flex list"> 
+                            <dd>First Name</dd>
+                            <dd id="Fname"></dd>
+                        </li>
+                        <li class="flex list"> 
+                            <dd>Last Name</dd>
+                            <dd id="Lname"></dd>
+                        </li>
+                        <li class="flex list"> 
+                            <dd>Username</dd>
+                            <dd id="username"></dd>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Address padding">
+                <div class="profile__card padding">
+                    <div class="title">
+                        <h5>Address</h5>
+                    </div>
+                    <ul>
+                        <li class="flex list"> 
+                            <dd>Street</dd>
+                            <dd id="street"></dd>
+                        </li>
+                        <li class="flex list"> 
+                            <dd>Suite</dd>
+                            <dd id="suite"></dd>
+                        </li>
+                        <li class="flex list"> 
+                            <dd>City</dd>
+                            <dd id="city"></dd>
+                        </li>
+                        <li class="flex list"> 
+                            <dd>Zipcode</dd>
+                            <dd id="zipcode"></dd>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Company padding">
+                <div class="profile__card padding">
+                    <div class="title">
+                        <h5>Company Details</h5>
+                    </div>
+                    <ul>
+                        <li class="flex list"> 
+                            <dd>Website</dd>
+                            <dd id="website"></dd>
+                        </li>
+                        <li class="flex list"> 
+                            <dd>Name</dd>
+                            <dd id="companyName"></dd>
+                        </li>
+                        <li class="flex list"> 
+                            <dd>Catch Phrase</dd>
+                            <dd id="CatchPhrase"></dd>
+                        </li>
+                        <li class="flex list"> 
+                            <dd>BS</dd>
+                            <dd id="BS"></dd>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/Main.js"></script>
+</body>
+</html>
