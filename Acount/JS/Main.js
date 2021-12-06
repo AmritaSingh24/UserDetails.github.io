@@ -1,4 +1,3 @@
-
 // Get userID from local storage.
 let storage = localStorage.getItem("localstorage");
 let id = "";
@@ -29,6 +28,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
     
     // const latitude = post.address.geo.lat;
     // const longitude = post.address.geo.lng;
+    // latLng(latitude, longitude)
 
     const name = post.name;
 
@@ -66,14 +66,17 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
     document.querySelector("#CatchPhrase").innerHTML = post.company.catchPhrase;
     document.querySelector("#BS").innerHTML = post.company.bs;
 
-    // fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`)
-    // .then( res=>{
-    //     res.json()
-    // 	.then(data=>{
-    //         console.log(data)
-    //     })
-    //     .catch(err=>console.log(err))
-    // })
-    // .catch(err=>console.log(err))
 })
 .catch(err=>console.log(err))
+
+// function latLng(latitude, longitude){
+//     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`)
+//     .then( res=>{
+//         res.json()
+//     	.then(data=>{
+//             console.log(data)
+//         })
+//         .catch(err=>console.log(err))
+//     })
+//     .catch(err=>console.log(err))
+// }
